@@ -61,6 +61,7 @@ height: 100vh;
 .resultado input{
   outline: none;
   border: none;
+  border-radius: 3px;
   height: 15px;
   margin-top: 5px;
 }
@@ -90,8 +91,8 @@ height: 100vh;
   width: 90px;
   height: 21px;
   border: none;
-  border-radius: 3px;
-  background-color: black;
+  border-radius: 4px;
+  background-color: green;
   color: #fff;
   cursor: pointer;
   font-weight: 500;
@@ -100,14 +101,24 @@ height: 100vh;
 #resultado:hover{
   background-color: #fff;
   color: #000;
-  border: 1px solid #000;
+  border: 1px solid green;
   font-weight: 600;
 }
 
 #reset{
-  width: 70px;
+  width: 90px;
   height: 21px;
   border: none;
   border-radius: 3px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
 
+#reset:hover{
+  background-color: #fff;
+  color: #000100;
+  border: 1px solid #000;
+  font-weight: bold;
 }
