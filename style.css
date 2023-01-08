@@ -22,7 +22,7 @@ height: 100vh;
 .wrapperCalculadora{
   position: absolute;
   top: 10%;
-  left: 30%;
+  left: 29%;
   background-color: aqua;
   margin-inline: auto;
   width: 50%;
@@ -40,6 +40,7 @@ height: 100vh;
   border: 1px solid rgba(255, 255, 255, 0.9);
 }
 .wrapperCalculadora h1{
+  text-shadow: 0 0px 3px;
   font-size: clamp(2rem,2vw,2.4rem);
 
 }
@@ -76,18 +77,19 @@ height: 100vh;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  width: 30%;
+  width: 40%;
 }
 
 /* MODIFICAÇÃO DOS INPUTS */
-#valorConta,
-#qntPessoas{
+#valorConta{
   width: 50%;
 }
-
+#qntPessoas{
+width: 55px;
+}
 /* botões */
 
-#resultado{
+#btnCalcular{
   width: 90px;
   height: 21px;
   border: none;
@@ -98,7 +100,7 @@ height: 100vh;
   font-weight: 500;
 }
 
-#resultado:hover{
+#btnCalcular:hover{
   background-color: #fff;
   color: #000;
   border: 1px solid green;
