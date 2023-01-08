@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Roboto:wght@300;500;700;900&display=swap');
+
+:root{
+  font-size: 62.5%;
+  font-family: 'Fira Code', monospace;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+position: relative;
+top: 0;
+left: 0;
+background-color: #00000068;
+height: 100vh;
+}
+
+.wrapperCalculadora{
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  background-color: aqua;
+  margin-inline: auto;
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid red;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  box-shadow: 5px 4px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+.wrapperCalculadora h1{
+  font-size: clamp(2rem,2vw,2.4rem);
+
+}
+
+.wrapperCalculadora h1 span{
+  color: green;
+}
+
+.calculadoraInputs,
+.resultado{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 15px;
+}
+
+.calculadoraInputs input,
+.calculadoraInputs input option
+.resultado input{
+  outline: none;
+  border: none;
+  height: 15px;
+  margin-top: 5px;
+}
+
+.calculadoraInputs label,
+.resultado label{
+  font-weight: bold;
+
+}
+.btnCalculadora{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 30%;
+}
+
+/* MODIFICAÇÃO DOS INPUTS */
+#valorConta,
+#qntPessoas{
+  width: 50%;
+}
+
+/* botões */
+
+#resultado{
+  width: 90px;
+  height: 21px;
+  border: none;
+  border-radius: 3px;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#resultado:hover{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  font-weight: 600;
+}
+
+#reset{
+  width: 70px;
+  height: 21px;
+  border: none;
+  border-radius: 3px;
+
+}

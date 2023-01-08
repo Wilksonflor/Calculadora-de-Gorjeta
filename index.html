@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Calculadora de Gorjetas</title>
+</head>
+
+<body>
+  <main>
+    <div class="wrapperCalculadora">
+      <h1>Calculadora de Gorjetas <span>&#36;</span></h1>
+      <div class="calculadoraInputs">
+        <label for="valor">Valor da conta</label>
+        <input type="text" placeholder="R$" id="valorConta">
+      </div>
+      
+      <div class="calculadoraInputs">
+        <label for="valor">Porcentagem da conta</label>
+        <select name="" id="porcentagem">
+          <option value="10">10%</option>
+          <option value="15">15%</option>
+          <option value="20">20%</option>
+        </select>
+      </div>
+
+      <div class="calculadoraInputs">
+        <label for="valor">Quantidade de pessoas</label>
+        <input type="number" id="qntPessoas">
+      </div>
+
+      <div class="btnCalculadora">
+        <button id="resultado">Calcular</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <div class="resultado">
+        <label for="Gorjeta total">Gorejta total $</label>
+        <input type="text" id="gorjetaTotal" disabled="desabled">
+  
+        <label for="Total da conta">Total da conta $</label>
+        <input type="text" id="contaTotal" disabled="desabled">
+  
+        <label for="valorPessoa">Valor para cada pessoa $</label>
+        <input type="text" id="valorPessoa" disabled="desabled">
+      </div>
+    </div>
+
+  
+  </main>
+</body>
+
+</html>
