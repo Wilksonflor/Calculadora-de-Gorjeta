@@ -26,8 +26,12 @@ btnResultado.addEventListener('click', valorTotal);
 
 function limparForm() {
     valorConta.value = '';
-
+    document.getElementById('gorjetaTotal').value = '';
+    document.getElementById('contaTotal').value = '';
+    document.getElementById('valorPessoa').value = '';
+    document.getElementById('porcentagem').value = '';
+    document.getElementById('qntPessoas').value = '';
 }
 
-const btnReset = document.getElementById('reset')
-btnReset.addEventListener('click', limparForm)
+const btnReset = document.getElementById('reset');
+btnReset.addEventListener('click', limparForm);
